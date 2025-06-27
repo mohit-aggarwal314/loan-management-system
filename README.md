@@ -18,6 +18,8 @@ This is a mini fintech web application built with **CodeIgniter 3**. It allows c
 - Filter loans by status
 - Approve / Reject loan applications
 - View repayment history per loan
+- admin email - admin@loan.com
+- admin password - admin123
 ---
 
 ## 🛠️ Tech Stack
