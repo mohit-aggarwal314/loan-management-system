@@ -47,7 +47,7 @@
         <div class="alert alert-info">No repayments made yet.</div>
     <?php endif; ?>
 
-    <a href="<?= base_url('index.php/customer/dashboard') ?>" class="btn btn-link">← Back to Dashboard</a>
+    <a href="<?= base_url('customer/dashboard') ?>" class="btn btn-link">← Back to Dashboard</a>
 
 </div>
 </body>

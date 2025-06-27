@@ -18,7 +18,7 @@
     <button type="submit" class="btn btn-primary w-100">Login</button>
 </form>
 <p class="text-center mt-3">
-    Don't have an account? <a href="<?= base_url('index.php/auth/register') ?>">Register here</a>
+    Don't have an account? <a href="<?= base_url('auth/register') ?>">Register here</a>
 </p>
 
 

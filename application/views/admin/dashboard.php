@@ -9,15 +9,15 @@
 
     <div class="d-flex justify-content-between align-items-center mb-4">
         <h2>Admin Dashboard</h2>
-        <a href="<?= base_url('index.php/auth/logout') ?>" class="btn btn-danger">Logout</a>
+        <a href="<?= base_url('auth/logout') ?>" class="btn btn-danger">Logout</a>
     </div>
 
     <h5 class="mb-3">Filter by Status:</h5>
     <div class="mb-4">
-        <a href="<?= base_url('index.php/admin/dashboard') ?>" class="btn btn-outline-secondary btn-sm">All</a>
-        <a href="<?= base_url('index.php/admin/dashboard?status=pending') ?>" class="btn btn-outline-warning btn-sm">Pending</a>
-        <a href="<?= base_url('index.php/admin/dashboard?status=approved') ?>" class="btn btn-outline-success btn-sm">Approved</a>
-        <a href="<?= base_url('index.php/admin/dashboard?status=rejected') ?>" class="btn btn-outline-danger btn-sm">Rejected</a>
+        <a href="<?= base_url('admin/dashboard') ?>" class="btn btn-outline-secondary btn-sm">All</a>
+        <a href="<?= base_url('admin/dashboard?status=pending') ?>" class="btn btn-outline-warning btn-sm">Pending</a>
+        <a href="<?= base_url('admin/dashboard?status=approved') ?>" class="btn btn-outline-success btn-sm">Approved</a>
+        <a href="<?= base_url('admin/dashboard?status=rejected') ?>" class="btn btn-outline-danger btn-sm">Rejected</a>
         
     </div>
 
@@ -54,13 +54,13 @@
                 </td>
                 <td>
                     <?php if ($loan->status == 'pending'): ?>
-                        <a href="<?= base_url('index.php/admin/update_status/'.$loan->id.'/approved') ?>" class="btn btn-success btn-sm">Approve</a>
-                        <a href="<?= base_url('index.php/admin/update_status/'.$loan->id.'/rejected') ?>" class="btn btn-danger btn-sm">Reject</a>
+                        <a href="<?= base_url('admin/update_status/'.$loan->id.'/approved') ?>" class="btn btn-success btn-sm">Approve</a>
+                        <a href="<?= base_url('admin/update_status/'.$loan->id.'/rejected') ?>" class="btn btn-danger btn-sm">Reject</a>
                     <?php else: ?>
                         <span class="text-muted">No Action</span>
                     <?php endif; ?>
                 </td>
-                <td><a href="<?= base_url('index.php/admin/loan_detail/'.$loan->id) ?>" class="btn btn-info btn-sm">View</a></td>
+                <td><a href="<?= base_url('admin/loan_detail/'.$loan->id) ?>" class="btn btn-info btn-sm">View</a></td>
             </tr>
             <?php endforeach; ?>
         </tbody>

@@ -9,12 +9,12 @@
 
     <div class="d-flex justify-content-between align-items-center mb-4">
         <h2>Welcome, <?= $this->session->userdata('user')->name ?></h2>
-        <a href="<?= base_url('index.php/auth/logout') ?>" class="btn btn-danger">Logout</a>
+        <a href="<?= base_url('auth/logout') ?>" class="btn btn-danger">Logout</a>
     </div>
 
     <div class="mb-3">
-        <a href="<?= base_url('index.php/customer/apply_loan') ?>" class="btn btn-primary">Apply for a New Loan</a>
-        <a href="<?= base_url('index.php/customer/repay') ?>" class="btn btn-secondary">Make Repayment</a>
+        <a href="<?= base_url('customer/apply_loan') ?>" class="btn btn-primary">Apply for a New Loan</a>
+        <a href="<?= base_url('customer/repay') ?>" class="btn btn-secondary">Make Repayment</a>
     </div>
 
     <h4>Your Loan Applications</h4>
@@ -45,7 +45,7 @@
                         </span>
                     </td>
                     <td><?= $loan->created_at ?></td>
-                    <td><a href="<?= base_url('index.php/customer/loan_detail/'.$loan->id) ?>" class="btn btn-sm btn-info">View</a></td>
+                    <td><a href="<?= base_url('customer/loan_detail/'.$loan->id) ?>" class="btn btn-sm btn-info">View</a></td>
                 </tr>
                 <?php endforeach; ?>
             </tbody>

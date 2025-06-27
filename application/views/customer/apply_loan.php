@@ -30,7 +30,7 @@
         <button type="submit" class="btn btn-primary w-100">Submit Application</button>
     </form>
 
-    <a href="<?= base_url('index.php/customer/dashboard') ?>" class="btn btn-link mt-3">← Back to Dashboard</a>
+    <a href="<?= base_url('customer/dashboard') ?>" class="btn btn-link mt-3">← Back to Dashboard</a>
 
 </div>
 </body>

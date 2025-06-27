@@ -40,7 +40,7 @@
         <div class="alert alert-warning">No repayments found for this loan.</div>
     <?php endif; ?>
 
-    <a href="<?= base_url('index.php/admin/dashboard') ?>" class="btn btn-link">← Back to Dashboard</a>
+    <a href="<?= base_url('admin/dashboard') ?>" class="btn btn-link">← Back to Dashboard</a>
 
 </div>
 </body>

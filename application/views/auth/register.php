@@ -20,7 +20,7 @@
     <button type="submit" class="btn btn-success w-100">Register</button>
 </form>
 <p class="text-center mt-3">
-    Already have an account? <a href="<?= base_url('index.php/auth/login') ?>">Login</a>
+    Already have an account? <a href="<?= base_url('auth/login') ?>">Login</a>
 </p>
 
 
